@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="to do list app, best to do app, online to do app, to do app using js, create to do list">
+    <meta name="description" content="This is our to do list app, small project, challange">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- My Styling File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="imgs/icon.png" type="image/x-icon">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+        </header> <!-- ./header -->
+        <main>
+            <div id="main-container">
+                <div class="title">
+                    <h2>todo</h2>
+                    <i class="fas fa-sun changeTheme"></i>
+                </div> <!-- ./title -->
+                <div class="input flex-row">
+                    <div class="checkbox">
+                        <div class="circle">
+                        </div> <!-- ./circle -->
+                    </div> <!-- ./checkbox -->
+                    <div class="input-field">
+                        <input type="text" class="addNewTask" placeholder="Create a new todo..">
+                    </div> <!-- ./input-filed -->
+                </div> <!-- ./input -->
+                <div class="tasks">
+                </div> <!-- ./tasks -->
+                <div class="filter-menu-mob">
+                    <div class="filter-counter">
+                        <span class="counter">0</span>
+                        items left
+                    </div> <!-- ./filter-counter -->
+                    <div class="clear-all">
+                        <a href="#" class="btn-clear-all">Clear Completed</a>
+                    </div> <!-- ./clear-all -->
+                </div> <!-- ./filter-menu-mobile -->
+                <div class="filter-menu">
+                    <div class="filter-counter">
+                        <span class="counter">0</span>
+                        items left
+                    </div> <!-- ./filter-counter -->
+                    <div class="filter-category">
+                        <ul>
+                            <li><a href="#" class="showAll">All</a></li>
+                            <li><a href="#" class="showActive">Active</a></li>
+                            <li><a href="#" class="showCompleted">Completed</a></li>
+                        </ul> <!-- ./ul -->
+                    </div> <!-- ./filter-category -->
+                    <div class="clear-all">
+                        <a href="#" class="btn-clear-all">Clear Completed</a>
+                    </div> <!-- ./clear-all -->
+                </div> <!-- ./filter-menu -->
+            </div> <!-- ./container -->
+        </main> <!-- ./main -->
+        <footer>
+            <p>Drag and Drop to reorder list</p>
+        </footer> <!-- ./footer -->
+    </div> <!-- ./container -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
